@@ -13,3 +13,7 @@ WHERE flt.origin_city =  'Seattle WA'
     AND car.name = 'Alaska Airlines Inc.'
     AND week.day_of_week = 'Monday'
 ;
+
+-- 12
+-- 24
+-- 734

@@ -52,7 +52,10 @@ AND orig_2.origin_city IS NULL
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 ------------------------------------------------------------------
-
+/* This should be the less performant option
+I was not able to get either of these queries to be performant
+My computer continued to freeze up from memory constraints
+*/
 
 
 SELECT DISTINCT

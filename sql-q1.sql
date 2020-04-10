@@ -11,6 +11,9 @@ WHERE flt.origin_city IN  ('Seattle WA', 'New York NY')
 
 GROUP BY carrier;
 
+
+-- Query Time: not available
+-- Result set:
 -- "American Airlines Inc.",991
 -- "Delta Air Lines Inc.",999
 -- "JetBlue Airways",996

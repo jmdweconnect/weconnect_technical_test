@@ -41,6 +41,8 @@ FROM
 
 WHERE orig.dest_city IS NULL
 AND orig_2.origin_city IS NULL
+
+ORDER BY city ASC
 ;
 
 --"Hattiesburg/Laurel MS"
@@ -53,8 +55,9 @@ AND orig_2.origin_city IS NULL
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 /* This should be the less performant option
-I was not able to get either of these queries to be performant
-My computer continued to freeze up from memory constraints
+However I was not able to get either of these queries to be performant
+nor could I make any attempts at optimization.
+My computer continued to crash from memory constraints
 */
 
 
@@ -88,6 +91,7 @@ AND flt.dest_city NOT IN
                 AND subc.origin_city <> 'Seattle WA'
                 AND subc.dest_city <> 'Seattle WA'
         )
+ORDER BY city ASC
 ;
 -- "Seattle WA"
 -- "Hattiesburg/Laurel MS"

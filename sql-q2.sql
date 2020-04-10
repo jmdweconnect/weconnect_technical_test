@@ -14,6 +14,8 @@ WHERE flt.origin_city =  'Seattle WA'
     AND week.day_of_week = 'Monday'
 ;
 
+-- Query Time: Not available
+-- Results:
 -- 12
 -- 24
 -- 734
